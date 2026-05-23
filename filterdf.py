@@ -18,7 +18,5 @@ print(df[df['Age'] >= 18])  # or directly printed the data in print function
 
 # To get the dataframe without any chanage just give the null value or customize the null value with other keyword
 df_age_filtered_wcd = df.where(
-    ((df['Age'] >= 21)), other='Not Eligible')
+    (df['Age'] >= 21), other='Null')
 print(df_age_filtered_wcd)
-
-
